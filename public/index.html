@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>URL Shortener</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Rammetto+One" rel="stylesheet">
+</head>
+
+<body class="grid">
+    <h1 class="header">SMM URL Shortener</h1>
+    <form class="form" action="/" method="post">
+        <label class="label">Enter the URL you want to shorten and press submit.</label>
+        <input type="text" name="link" placeholder="Enter URL..." class="url">
+        <br>
+        <input type="submit" value="Submit" class="submitBtn">
+    </form>
+    <div class="info">
+        <p>Type in any valid URL and submit it. You will receive a shortened version of your URL. Share it with everyone!</p>
+        <br>
+        <h3 class="example">Example Usage:</h3>
+        <ul class="list">
+            <li>Submit any URL in the format "http://www.example.com" and get a JSON response with a shortened URL.<br>
+             <br>{ <br> "original": "http://www.example.com", <br> "shortened": "https://smm-url.glitch.me/16983"
+            <br>}
+            </li>
+            <br>
+            <li>
+                Visit the shortened URL and get redirected to the original URL anytime!
+                
+                Goto "https://smm-url.glitch.me/16983" and get redirected to "http://www.example.com".
+            </li>
+        </ul>
+    </div>
+</body>
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script src="script.js"></script>
+
+</html>

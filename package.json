@@ -1,0 +1,23 @@
+{
+  "name": "smm-url-shortener",
+  "version": "1.0.0",
+  "description": "Get a shortened URL for any URL passed as a parameter.",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "mongodb": "^3.0.2",
+    "valid-url": "^1.0.9"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sadabmm/url-shortener.git"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "\"NOTHING!\"",
+    "start": "node server.js"
+  },
+  "author": "SMM",
+  "license": "MIT"
+}
