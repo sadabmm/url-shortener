@@ -1,7 +1,7 @@
 .grid {
   display: grid;
   grid-template-columns: 20% 20% 20% 20% 20%;
-  grid-template-rows: 1fr 1fr 4fr;
+  grid-template-rows: 0.5fr 1.5fr 3fr;
 }
 
 .container {
@@ -27,16 +27,25 @@
     align-content: center;
     justify-content: center;
     grid-area: 2/2/2/5;
+    margin: 8px 8px;
 }
 
 input[type=text] {
-    width: 100%;
+    width: 90%;
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
+    border: thin solid black;
 }
 
-.label, .submitBtn{
+.submitBtn{
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.label {
     text-align: center;
     font-family: "Open Sans", sans-serif;
 }
