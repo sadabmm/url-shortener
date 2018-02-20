@@ -8,6 +8,7 @@ const path = require("path");
 const express = require("express");
 const app = express();
 
+//Save the link to your mongodb as an environment variable
 var url = process.env.MONGOLAB_URI;
 var appURL = 'https://smm-url.glitch.me/';
 
