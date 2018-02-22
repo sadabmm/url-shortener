@@ -16,7 +16,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(bodyParser.urlencoded({extended: false}));
 
 app.post('/', (req,res)=>{
-    var link = req.body.link;
+    var link = req.body.link.toLowerCase();
     var randID = Math.floor(Math.random()*90000) + 10000;
     var linkData = {
         original: link,
